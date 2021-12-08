@@ -1,3 +1,37 @@
+a {
+
+    font-size: 25px;
+}
+
+#pic1, #pic2, #pic3, #pic4 {
+    border-bottom: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-style: solid;
+    border-radius: 2px;
+    padding: 0px;
+    width: 32em;
+    height: 20em;
+    margin: 10px;
+    
+}
+
+.container p {
+    font-size: 24px;
+}
+
+.container h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
 p.question {
     font-family: Arial, sans-serif;
     font-size:20px;
