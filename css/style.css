@@ -51,6 +51,7 @@ p.question {
 h2.quizScore{
     font-family: Arial, sans-serif;
     font-size:25px;
+    padding-bottom: 20px;
 }
   
 div.quizAnswers{
@@ -72,17 +73,17 @@ input.answer[type="radio"] {
 }
   
 input.quizSubmit[type="submit"] {
-    -webkit-background-clip: border-box;
+    /* -webkit-background-clip: border-box;
     -webkit-background-origin: padding-box;
     -webkit-background-size: auto;
     -webkit-transition-delay: 0s, 0s;
     -webkit-transition-duration: 0.2s, 0.2s;
     -webkit-transition-property: color, background-color;
-    -webkit-transition-timing-function: ease, ease;
+    -webkit-transition-timing-function: ease, ease; */
     box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 5px 0px;
     color: #ffffff;
     background-color: #afaeae;
-    margin: 0;
+    margin-bottom: 20px;
     border: 0;
     outline: 0;
     text-transform:uppercase;
