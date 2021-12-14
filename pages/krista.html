@@ -14,6 +14,11 @@
     <!-- My Javascript file -->
     <script src="../js/krista.js"></script>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+
     <title>Naperonurkka</title>
   </head>
   <body>
@@ -24,163 +29,153 @@
     </header>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Etusivu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../pages/info.html">Tietoja</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <ul class="nav justify-content-center navbar-dark bg-dark sticky-top">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../index.html">Etusivu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../pages/info.html">Tietoja</a>
+      </li>
+    </ul>
 
     <!-- Quiz -->
-    <div class="container">
+    <div class="container d-flex justify-content-center">
       <div class="row">
         <div class="col">
 
-          <br><h1>Testaa tietosi Visailussa!</h1><br>
+          <br><h1 style="
+          font-family: 'Mansalva', cursive;
+          font-size: 60px;">Testaa tietosi Visailussa!</h1><br>
 
-          <table style="width:583px">
-            <tr>
-              <td>
-                  <div>
-                      <p class="question">1. Quiz question #1</p>
-        
-                    <ul>
-                    <input class="answer" type="radio" name="q1" value="1">
-                    <label id="correctString1">correct answer 1</label>
-                    <br>
-                    <input class="answer" type="radio" name="q1" value="0">
-                    <label>wrong answer</label>
-                    <br>
-                    <input class="answer" type="radio" name="q1" value="0">
-                    <label>wrong answer</label>
-                    <br>
-                    <input class="answer" type="radio" name="q1" value="0">
-                    <label>wrong answer</label>
-                    </ul>
-                  </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                  <div>
-                      <p class="question">2. Quiz question #2</p>
-        
-                    <ul>
-                    <input class="answer" type="radio" name="q2" value="0">
-                    <label>wrong answer</label>
-                    <br>
-                    <input class="answer" type="radio" name="q2" value="1">
-                    <label id="correctString2">correct answer 2</label>
-                    <br>
-                    <input class="answer" type="radio" name="q2" value="0">
-                    <label>wrong answer</label>
-                    <br>
-                    <input class="answer" type="radio" name="q2" value="0">
-                    <label>wrong answer</label>
-                    </ul>
-                  </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                  <div>
-                      <p class="question">3. Quiz question #3</p>
-        
-                    <ul>
-                    <input class="answer" type="radio" name="q3" value="0">
-                    <label>wrong answer</label>
-                    <br>
-                    <input class="answer" type="radio" name="q3" value="1">
-                    <label id="correctString3">correct answer 3</label>
-                    <br>
-                    <input class="answer" type="radio" name="q3" value="0">
-                    <label>wrong answer</label>
-                    <br>
-                    <input class="answer" type="radio" name="q3" value="0">
-                    <label>wrong answer</label>
-                    </ul>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                  <div>
-                      <p class="question">4. Quiz question #4</p>
-        
-                    <ul>
-                    <input class="answer" type="radio" name="q4" value="0">
-                    <label>wrong answer</label>
-                    <br>
-                    <input class="answer" type="radio" name="q4" value="1">
-                    <label id="correctString4">correct answer 4</label>
-                    <br>
-                    <input class="answer" type="radio" name="q4" value="0">
-                    <label>wrong answer</label>
-                    <br>
-                    <input class="answer" type="radio" name="q4" value="0">
-                    <label>wrong answer</label>
-                    </ul>
-                  </div>
-              </td>
-            </tr>
-            <tr>
-                <td>
-                    <div>
-                        <p class="question">4. Quiz question #4</p>
-          
-                      <ul>
-                      <input class="answer" type="radio" name="q4" value="0">
-                      <label>wrong answer</label>
-                      <br>
-                      <input class="answer" type="radio" name="q4" value="1">
-                      <label id="correctString4">correct answer 4</label>
-                      <br>
-                      <input class="answer" type="radio" name="q4" value="0">
-                      <label>wrong answer</label>
-                      <br>
-                      <input class="answer" type="radio" name="q4" value="0">
-                      <label>wrong answer</label>
-                      </ul>
-                    </div>
-                </td>
-            </tr>
-            </table>
-        <br>
-            <div class="submitter">
-                  <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
-                  type="submit" value="Submit" />
-            </div>
-          
-        <!-- Show the wrong answers and the correct ones -->
-            <div class="quizAnswers" id="correctAnswer1"></div>
-            <div class="quizAnswers" id="correctAnswer2"></div>
-            <div class="quizAnswers" id="correctAnswer3"></div>
-            <div class="quizAnswers" id="correctAnswer4"></div>
-        
-        <!-- Score -->
-            <div>
-                <h2 class="quizScore" id="userScore"></h2>
-            </div>
+<table style="width:583px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1. Mikä väri on Saksan lipussa ylimpänä?</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">musta</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>keltainen</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>punainen</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>valkoinen</label>
+    		</ul>
+	  	</div>
+	  </td>
+  </tr>
+  <tr>
+	  <td>
+	  	<div>
+	  		<p class="question">2. Mikä on sanan "susi" monikon genetiivimuoto?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>suden</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">susien</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>susilla</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>susissa</label>
+	    	</ul>
+	  	</div>
+	  </td>
+  </tr>
+  <tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3. Mikä näistä on saarivaltio?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>Suomi</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">Japani</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>Saksa</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>Brasilia</label>
+	    	</ul>
+		</div>
+	  </td>
+  </tr>
+  <tr>
+	  <td>
+	  	<div>
+	  		<p class="question">4. Mikä on Euroopan laajin kasvillisuusalue?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>aro</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">lehtimetsä</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>havumetsä</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>tundra</label>
+    		</ul>
+	  	</div>
+	  </td>
+  </tr>
+  <tr>
+    <td>
+	  	<div>
+	  		<p class="question">5. Mikä näistä maista on eteläisin?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>Egypti</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="1">
+	        <label id="correctString5">Uusi-Seelanti</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>Meksiko</label>
+	        <br>
+	        <input class="answer" type="radio" name="q5" value="0">
+	        <label>Venäjä</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	  <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+    <div class="quizAnswers" id="correctAnswer5"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
 
         </div>
       </div>
     </div>
-
-    <footer>
-
-    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -192,5 +187,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="">Miika, Jami, Krista, Mira</a>
+      </div>
+    </footer>
+
   </body>
 </html>
