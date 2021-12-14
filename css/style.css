@@ -1,19 +1,15 @@
-<<<<<<< HEAD
-a {
-
-=======
-img.headerLogo {
-    display:inline-block;
-    margin: 0 auto;
-}
-
 header {
     width:100%;
     text-align:center;
 }
 
+img.headerLogo {
+    display:inline-block;
+    margin: 0 auto;
+}
+
 a {
->>>>>>> 06749f3ef4108f2c0f08ab9cf9f0d3ad45ea5c1e
+
     font-size: 25px;
 }
 
@@ -33,43 +29,15 @@ a {
 
 .container p {
     font-size: 24px;
-<<<<<<< HEAD
 }
 
 .container h1 {
     margin-top: 30px;
     margin-bottom: 20px;
-}
-
-
-
-
-
-
-=======
-    margin: 40px;
-}
-
-.container h1 {
-    margin-top: 40px;
     text-align: center;
-    margin-bottom: 30px;
-}
-
-ul.nav li a, ul.nav li a:visited {
-    color: white !important;
-}
-
-ul.nav li a:hover, ul.nav li a:active {
-    color: white !important;
-}
-
-ul.nav li.active a {
-    color: white !important;
 }
 
 /* Krista Koljosen CSS alkaa */
->>>>>>> 06749f3ef4108f2c0f08ab9cf9f0d3ad45ea5c1e
 
 p.question {
     font-family: Arial, sans-serif;
