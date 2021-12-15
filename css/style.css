@@ -64,6 +64,12 @@ label {
 input.answer[type="radio"] {
     margin-bottom: 10px;
 }
+.card-title {
+    text-align: center;
+}
+#footer {
+    margin-top: 100px;
+}
   
 input.quizSubmit[type="submit"] {
     box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 5px 0px;
