@@ -1,3 +1,5 @@
+// Koodiin on otettu mallia https://codepen.io/harrysadlermusic/ käyttäjän JS ohjeista. Koodia on muutettu.
+
 function submitQuiz() {
 
 // Get answer score
