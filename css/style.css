@@ -69,6 +69,13 @@ p.question {
     color: #2E2E2E;
     margin-bottom:0px;
 }
+
+#link1 {
+    text-decoration: none;
+    color: black;
+    font-family: "Mansalva", "cursive";
+            font-size: 35px;
+}
   
 h2.quizScore{
     font-family: Arial, sans-serif;
