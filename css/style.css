@@ -13,19 +13,7 @@ a {
     font-size: 25px;
 }
 
-#pic1, #pic2, #pic3, #pic4 {
-    border-bottom: black;
-    border-top: black;
-    border-left: black;
-    border-right: black;
-    border-style: solid;
-    border-radius: 2px;
-    padding: 0px;
-    width: 32em;
-    height: 20em;
-    margin: 10px;
-    
-}
+
 
 .container p {
     font-size: 24px;
