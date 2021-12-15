@@ -82,6 +82,16 @@ p.question {
     font-family: "Mansalva", "cursive";
             font-size: 35px;
 }
+#link2 {
+    color: black;
+}
+#link1:hover {
+    color: tomato;
+}
+#link2:hover {
+    color: tomato;
+}
+
   
 h2.quizScore{
     font-family: Arial, sans-serif;
