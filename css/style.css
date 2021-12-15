@@ -27,6 +27,13 @@ a {
     
 }
 
+body {
+    background-image: url(../images/tausta2.png);
+    background-size: cover;
+}
+
+
+
 .container p {
     font-size: 24px;
 }
