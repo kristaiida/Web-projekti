@@ -13,7 +13,19 @@ a {
     font-size: 25px;
 }
 
-
+#pic1, #pic2, #pic3, #pic4 {
+    border-bottom: black;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+    border-style: solid;
+    border-radius: 2px;
+    padding: 0px;
+    width: 32em;
+    height: 20em;
+    margin: 10px;
+    
+}
 
 body {
     background-image: url(../images/tausta2.png);
@@ -30,6 +42,23 @@ body {
     margin-top: 30px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+/*Tietoja sivun css */
+
+.container2 h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container2 {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.container2 p {
+    font-size: 24px;
 }
 
 /* Krista Koljosen CSS alkaa */
