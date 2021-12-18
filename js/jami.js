@@ -1,39 +1,159 @@
-var minimum = 1;
-var maximum = 10;
-var int1 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-var int2 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-var int3 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-var int4 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-var int5 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-var int6 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-var int7 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-var int8 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-var int9 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-var int10 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-document.getElementById("question1").innerHTML = "How much is " + int1 + " " + "+" + " " + int2 + " ?";
-var qanswer1 = int1 + int2;
-document.getElementById("question2").innerHTML = "How much is " + int3 + " " + "-" + " " + int4 + " ?";
-var qanswer2 = int3 - int4;
-document.getElementById("question3").innerHTML = "How much is " + int5 + " " + "x" + " " + int6 + " ?";
-var qanswer3 = int5 * int6;
-document.getElementById("question4").innerHTML = "How much is " + int7 + " " + "/" + " " + int8 + " ?";
-var qanswer4 = int7 / int8;
-document.getElementById("question5").innerHTML = "How much is " + int9 + " " + "x" + " " + int10 + " ?";
-var qanswer5 = int9 * int10;
- 
-    function fire() {
-var uanswer = document.getElementById("answer").value;
-      if (uanswer == qanswer1 || uanswer == qanswer2 || uanswer == qanswer3 || uanswer == qanswer4 || uanswer == qanswer5) {
+var a001 = Math.floor(Math.random() * 10);
+var a002 = Math.floor(Math.random() * 10);
+var a003 = a001 + a002;
 
-        
-        alert("Correct!")
-        
-        
-        
-        
-      } else {
-        alert("WRONG!")
-      }
-    }
+var b001 = Math.floor(Math.random() * 10);
+var b002 = Math.floor(Math.random() * 10);
+var b003 = b001 - b002;
 
-   
+var c001 = Math.floor(Math.random() * 10);
+var c002 = Math.floor(Math.random() * 10);
+var c003 = c001 * c002;
+
+var d001 = Math.floor(Math.random() * 10);
+var d002 = Math.floor(Math.random() * 10);
+var d003 = d001 / d002;
+
+var j001 = Math.floor(Math.random() * 10);
+var j002 = Math.floor(Math.random() * 10);
+var j003 = j001 + j002;
+
+var z = 0;
+z++;
+var y = 0;
+y++;
+
+function begin001() {
+  number001.innerHTML = y++;
+  disappear001.innerHTML = "";
+  message001.innerHTML = a001 + " + " + a002 + "<br />" + "__________";
+  message002.innerHTML = "<input type=text id=input001 /> <button onclick=submit001()>Tarkista</button>";
+}
+
+function submit001() {
+  var answer001 = input001.value;
+  show001.innerHTML = "Sinun vastauksesi: " + answer001;
+  if (answer001 == a003) {
+    z++;
+    message003.innerHTML = "Oikein! :)";
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=question002()>Seuraava</button>";
+  }
+  else {
+    message003.innerHTML = "Väärin! Oikea vastaus: " + a003;
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=question002()>Seuraava</button>";
+  }
+}
+
+function question002() {
+  number001.innerHTML = y++;
+  message001.innerHTML = b001 + " - " + b002 + "<br />" + "__________";
+  message002.innerHTML = "<input type=text id=input002 /> <button onclick=submit002()>Tarkista</button>";
+  message003.innerHTML = "";
+  show001.innerHTML = "";
+  message004.innerHTML = "";
+}
+
+function submit002() {
+  var answer001 = input002.value;
+  show001.innerHTML = "Sinun vastauksesi: " + answer001;
+  if (answer001 == b003) {
+    z++;
+    message003.innerHTML = "Oikein! :)";
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=question003()>Seuraava</button>";
+  }
+  else {
+    message003.innerHTML = "Väärin! Oikea vastaus: " + b003;
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=question003()>Seuraava</button>";
+  }
+}
+
+function question003() {
+  number001.innerHTML = y++;
+  message001.innerHTML = c001 + " x " + c002 + "<br />" + "__________";
+  message002.innerHTML = "<input type=text id=input003 /> <button onclick=submit003()>Tarkista</button>";
+  message003.innerHTML = "";
+  show001.innerHTML = "";
+  message004.innerHTML = "";
+}
+
+function submit003() {
+  var answer001 = input003.value;
+  show001.innerHTML =  "Sinun vastauksesi: " + answer001;
+  if (answer001 == c003) {
+    z++;
+    message003.innerHTML = "Oikein! :)";
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=question004()>Seuraava</button>";
+  }
+  else {
+    message003.innerHTML = "Väärin! Oikea vastaus: " + c003;
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=question004()>Seuraava</button>";
+  }
+}
+
+function question004() {
+  number001.innerHTML = y++;
+  message001.innerHTML = d001 + " / " + d002 + "<br />" + "__________";
+  message002.innerHTML = "<input type=text id=input004 /> <button onclick=submit004()>Tarkista</button>";
+  message003.innerHTML = "";
+  show001.innerHTML = "";
+  message004.innerHTML = "";
+}
+
+function submit004() {
+  var answer001 = input004.value;
+  show001.innerHTML =  "Sinun vastauksesi: " + answer001;
+  if (answer001 == d003) {
+    z++;
+    message003.innerHTML = "Oikein! :)";
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=question010()>Seuraava</button>";
+  }
+  else {
+    message003.innerHTML = "Väärin! Oikea vastaus: " + d003;
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=question010()>Seuraava</button>";
+  }
+}
+
+function question010() {
+  number001.innerHTML = y++;
+  message001.innerHTML = j001 + " + " + j002 + "<br />" + "__________";
+  message002.innerHTML = "<input type=text id=input010 /> <button onclick=submit010()>Tarkista</button>";
+  message003.innerHTML = "";
+  show001.innerHTML = "";
+  message004.innerHTML = "";
+}
+
+function submit010() {
+  var answer001 = input010.value;
+  show001.innerHTML =  "Sinun vastauksesi: " + answer001;
+  if (answer001 == j003) {
+    z++;
+    message003.innerHTML = "Oikein! :)";
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=end001()>Lopeta tentti</button>";
+  }
+  else {
+    message003.innerHTML = "Väärin! Oikea vastaus: " + j003;
+    message002.innerHTML = "";
+    message004.innerHTML = "<button onclick=end001()>Lopeta tentti</button>";
+  }
+}
+
+function end001() {
+  message001.innerHTML = "Lopputulos";
+  message002.innerHTML = "Sinä sait " + (z - 1) + " oikein 5:sta";
+  message003.innerHTML = "Kiitos että teit testin! :)";
+  show001.innerHTML = "";
+  message004.innerHTML = "<button onclick=repeat001()>Uudestaan</button>";
+}
+
+function repeat001() {
+  location.reload();
+}
