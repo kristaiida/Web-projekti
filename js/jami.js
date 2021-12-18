@@ -1,3 +1,4 @@
+// Luodaan randomnumber generaattorilla jokaiselle tehtävälle eri luvut. 
 var a001 = Math.floor(Math.random() * 10);
 var a002 = Math.floor(Math.random() * 10);
 var a003 = a001 + a002;
@@ -23,6 +24,7 @@ z++;
 var y = 0;
 y++;
 
+// Funktio kun painetaan aloita nappia
 function begin001() {
   number001.innerHTML = y++;
   disappear001.innerHTML = "";
@@ -30,16 +32,20 @@ function begin001() {
   message002.innerHTML = "<input type=text id=input001 /> <button onclick=submit001()>Tarkista</button>";
 }
 
+// Funktio kun painetaan Tarkista nappia
 function submit001() {
   var answer001 = input001.value;
   show001.innerHTML = "Sinun vastauksesi: " + answer001;
   if (answer001 == a003) {
     z++;
+    // Jos vastaus on oikein nämä tulostetaan!
     message003.innerHTML = "Oikein! :)";
     message002.innerHTML = "";
     message004.innerHTML = "<button onclick=question002()>Seuraava</button>";
   }
   else {
+
+    // Jos vastaus on väärin nämä tulostetaan!
     message003.innerHTML = "Väärin! Oikea vastaus: " + a003;
     message002.innerHTML = "";
     message004.innerHTML = "<button onclick=question002()>Seuraava</button>";
@@ -47,9 +53,12 @@ function submit001() {
 }
 
 function question002() {
+  // Tulostetaan oikea vastaus kun painetaan nappia tarkista
   number001.innerHTML = y++;
   message001.innerHTML = b001 + " - " + b002 + "<br />" + "__________";
   message002.innerHTML = "<input type=text id=input002 /> <button onclick=submit002()>Tarkista</button>";
+
+  // Kenttien tyhjennys aina kun painetaan nappia
   message003.innerHTML = "";
   show001.innerHTML = "";
   message004.innerHTML = "";
@@ -146,6 +155,7 @@ function submit010() {
   }
 }
 
+// Funktio joka näyttää lopputuleman kun visa päätetään
 function end001() {
   message001.innerHTML = "Lopputulos";
   message002.innerHTML = "Sinä sait " + (z - 1) + " oikein 5:sta";
@@ -154,6 +164,7 @@ function end001() {
   message004.innerHTML = "<button onclick=repeat001()>Uudestaan</button>";
 }
 
+// Kun sivu päivitetään alkaa visa alusta
 function repeat001() {
   location.reload();
 }
