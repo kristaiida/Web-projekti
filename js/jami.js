@@ -13,7 +13,7 @@ var c003 = c001 * c002;
 
 var d001 = Math.floor(Math.random() * 10);
 var d002 = Math.floor(Math.random() * 10);
-var d003 = d001 / d002;
+var d003 = d001 * d002;
 
 var j001 = Math.floor(Math.random() * 10);
 var j002 = Math.floor(Math.random() * 10);
@@ -107,7 +107,7 @@ function submit003() {
 
 function question004() {
   number001.innerHTML = y++;
-  message001.innerHTML = d001 + " / " + d002 + "<br />" + "__________";
+  message001.innerHTML = d001 + " x " + d002 + "<br />" + "__________";
   message002.innerHTML = "<input type=text id=input004 /> <button onclick=submit004()>Tarkista</button>";
   message003.innerHTML = "";
   show001.innerHTML = "";
