@@ -28,7 +28,7 @@ y++;
 function begin001() {
   number001.innerHTML = y++;
   disappear001.innerHTML = "";
-  message001.innerHTML = a001 + " + " + a002 + "<br />" + "__________";
+  message001.innerHTML = "Paljonko on " + a001 + " + " + a002 + "?";
   message002.innerHTML = "<input type=text id=input001 /> <button onclick=submit001()>Tarkista</button>";
 }
 
@@ -55,7 +55,7 @@ function submit001() {
 function question002() {
   // Tulostetaan oikea vastaus kun painetaan nappia tarkista
   number001.innerHTML = y++;
-  message001.innerHTML = b001 + " - " + b002 + "<br />" + "__________";
+  message001.innerHTML = "Paljonko on " + b001 + " - " + b002 + "?";
   message002.innerHTML = "<input type=text id=input002 /> <button onclick=submit002()>Tarkista</button>";
 
   // Kenttien tyhjennys aina kun painetaan nappia
@@ -82,7 +82,7 @@ function submit002() {
 
 function question003() {
   number001.innerHTML = y++;
-  message001.innerHTML = c001 + " x " + c002 + "<br />" + "__________";
+  message001.innerHTML = "Paljonko on " + c001 + " x " + c002 + "?";
   message002.innerHTML = "<input type=text id=input003 /> <button onclick=submit003()>Tarkista</button>";
   message003.innerHTML = "";
   show001.innerHTML = "";
@@ -107,7 +107,7 @@ function submit003() {
 
 function question004() {
   number001.innerHTML = y++;
-  message001.innerHTML = d001 + " x " + d002 + "<br />" + "__________";
+  message001.innerHTML = "Paljonko on " + d001 + " x " + d002 + "?";
   message002.innerHTML = "<input type=text id=input004 /> <button onclick=submit004()>Tarkista</button>";
   message003.innerHTML = "";
   show001.innerHTML = "";
@@ -132,7 +132,7 @@ function submit004() {
 
 function question010() {
   number001.innerHTML = y++;
-  message001.innerHTML = j001 + " + " + j002 + "<br />" + "__________";
+  message001.innerHTML = "Paljonko on " + j001 + " + " + j002 + "?";
   message002.innerHTML = "<input type=text id=input010 /> <button onclick=submit010()>Tarkista</button>";
   message003.innerHTML = "";
   show001.innerHTML = "";
@@ -157,7 +157,7 @@ function submit010() {
 
 // Funktio joka näyttää lopputuleman kun visa päätetään
 function end001() {
-  message001.innerHTML = "Lopputulos";
+  message001.innerHTML = "Lopputulos:";
   message002.innerHTML = "Sinä sait " + (z - 1) + " oikein 5:sta";
   message003.innerHTML = "Kiitos että teit testin! :)";
   show001.innerHTML = "";
